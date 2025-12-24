@@ -12,11 +12,44 @@ const { title } = Astro.props;
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Rocket League Season 21 Countdown" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
+
+		<!-- Primary Meta Tags -->
 		<title>{title}</title>
+		<meta name="title" content={title} />
+		<meta
+			name="description"
+			content="Countdown to the end of Rocket League Season 21. Check the remaining time, season rewards, and rank distribution."
+		/>
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={Astro.url} />
+		<meta property="og:title" content={title} />
+		<meta
+			property="og:description"
+			content="Countdown to the end of Rocket League Season 21. Check the remaining time, season rewards, and rank distribution."
+		/>
+		<meta
+			property="og:image"
+			content="https://rocket-season.vercel.app/og-image.jpg"
+		/>
+		<!-- Placeholder for now -->
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content={Astro.url} />
+		<meta property="twitter:title" content={title} />
+		<meta
+			property="twitter:description"
+			content="Countdown to the end of Rocket League Season 21. Check the remaining time, season rewards, and rank distribution."
+		/>
+		<meta
+			property="twitter:image"
+			content="https://rocket-season.vercel.app/og-image.jpg"
+		/>
 
 		<!-- Google Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />

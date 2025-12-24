@@ -1,14 +1,16 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Countdown from "../components/Countdown.astro";
+import SeasonInfo from "../components/SeasonInfo.astro";
+import RankDistribution from "../components/RankDistribution.astro";
+import FAQ from "../components/FAQ.astro";
+import AdPlaceholder from "../components/AdPlaceholder.astro";
 ---
 
 <Layout title="Rocket League Season 21 Countdown">
-	<main
-		class="min-h-screen flex flex-col items-center justify-center relative overflow-hidden"
-	>
+	<main class="min-h-screen flex flex-col relative">
 		<!-- Background Effects -->
-		<div class="absolute inset-0 z-0">
+		<div class="fixed inset-0 z-0">
 			<div
 				class="absolute top-0 left-1/4 w-96 h-96 bg-rocket-blue/20 rounded-full blur-[100px] animate-pulse"
 			>
@@ -24,50 +26,62 @@ import Countdown from "../components/Countdown.astro";
 			</div>
 		</div>
 
-		<div class="z-10 text-center px-4">
-			<h1
-				class="text-5xl md:text-7xl font-display font-black tracking-tighter mb-4 italic"
+		<div class="z-10 text-center px-4 w-full max-w-6xl mx-auto">
+			<!-- Hero Section -->
+			<section
+				class="min-h-screen flex flex-col justify-center items-center py-20"
 			>
-				<span class="text-white drop-shadow-lg">ROCKET</span>
-				<span class="text-rocket-blue neon-text-blue">LEAGUE</span>
-			</h1>
-			<h2
-				class="text-2xl md:text-4xl font-display font-bold text-rocket-orange neon-text-orange mb-12 tracking-widest"
-			>
-				SEASON 21 ENDS IN
-			</h2>
-
-			<Countdown />
-
-			<!--
-			
-
-			<div class="mt-16">
-				<a
-					href="#"
-					class="group relative px-8 py-4 bg-transparent overflow-hidden rounded-full transition-all duration-300 hover:scale-105"
+				<h1
+					class="text-5xl md:text-7xl font-display font-black tracking-tighter mb-4 italic"
 				>
-					<div
-						class="absolute inset-0 w-full h-full bg-gradient-to-r from-rocket-blue to-rocket-blue/50 opacity-20 group-hover:opacity-40 transition-opacity"
+					<span class="text-white drop-shadow-lg">ROCKET</span>
+					<span class="text-rocket-blue neon-text-blue">LEAGUE</span>
+				</h1>
+				<h2
+					class="text-2xl md:text-4xl font-display font-bold text-rocket-orange neon-text-orange mb-12 tracking-widest"
+				>
+					SEASON 21 ENDS IN
+				</h2>
+
+				<Countdown />
+
+				<div class="mt-8 animate-bounce text-slate-400">
+					<p class="text-sm">Scroll for Season Details</p>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="h-6 w-6 mx-auto mt-2"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke="currentColor"
 					>
-					</div>
-					<div
-						class="absolute inset-0 border border-rocket-blue rounded-full opacity-50 shadow-[0_0_15px_rgba(0,234,255,0.5)] group-hover:shadow-[0_0_25px_rgba(0,234,255,0.8)] transition-all"
-					>
-					</div>
-					<span
-						class="relative font-display font-bold text-rocket-blue group-hover:text-white transition-colors tracking-wider"
-					>
-						GET READY
-					</span>
-				</a>
-			</div>
-			
-			-->
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M19 14l-7 7-7-7"></path>
+					</svg>
+				</div>
+			</section>
+
+			<!-- Ad Space 1: Top Banner -->
+			<AdPlaceholder size="banner" />
+
+			<!-- Content Sections -->
+			<SeasonInfo />
+
+			<!-- Ad Space 2: In-Article -->
+			<AdPlaceholder size="rectangle" />
+
+			<RankDistribution />
+
+			<FAQ />
+
+			<!-- Ad Space 3: Bottom Banner -->
+			<AdPlaceholder size="banner" />
 		</div>
 
 		<footer
-			class="absolute bottom-4 text-slate-500 text-xs text-center w-full"
+			class="py-8 text-slate-500 text-xs text-center w-full relative z-10"
 		>
 			<p>Not affiliated with Psyonix or Epic Games. Fan made project.</p>
 		</footer>

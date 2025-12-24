@@ -1,0 +1,44 @@
+---
+const ranks = [
+    { name: "Bronze", percentage: 5, color: "bg-[#CD7F32]" },
+    { name: "Silver", percentage: 15, color: "bg-[#C0C0C0]" },
+    { name: "Gold", percentage: 25, color: "bg-[#FFD700]" },
+    { name: "Platinum", percentage: 30, color: "bg-[#4e9ec2]" },
+    { name: "Diamond", percentage: 15, color: "bg-[#3e55c9]" },
+    { name: "Champion", percentage: 8, color: "bg-[#9d3ec9]" },
+    { name: "Grand Champ", percentage: 1.5, color: "bg-[#c93e3e]" },
+    { name: "SSL", percentage: 0.5, color: "bg-white" },
+];
+---
+
+<section id="rank-distribution" class="py-6 w-full">
+    <div class="glass-panel p-8 md:p-12">
+        <h3
+            class="text-3xl md:text-4xl font-display font-bold text-white mb-2 text-left border-l-4 border-rocket-orange pl-4"
+        >
+            RANK <span class="text-rocket-orange">DISTRIBUTION</span>
+        </h3>
+        <p class="text-slate-400 mb-8 text-left pl-5">
+            Estimated player distribution 2v2 Standard
+        </p>
+
+        <div class="space-y-4">
+            {
+                ranks.map((rank) => (
+                    <div class="relative">
+                        <div class="flex justify-between text-sm text-slate-300 mb-1">
+                            <span class="font-bold">{rank.name}</span>
+                            <span>{rank.percentage}%</span>
+                        </div>
+                        <div class="w-full bg-slate-900/50 rounded-full h-4 overflow-hidden border border-white/5">
+                            <div
+                                class={`h-full rounded-full ${rank.color} shadow-[0_0_10px_rgba(255,255,255,0.3)]`}
+                                style={`width: ${rank.percentage}%`}
+                            ></div>
+                        </div>
+                    </div>
+                ))
+            }
+        </div>
+    </div>
+</section>

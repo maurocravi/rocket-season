@@ -1,0 +1,45 @@
+---
+const faqs = [
+    {
+        question: "When does Season 21 exactly end?",
+        answer: "Season 21 is expected to end on March 11, 2026. The exact time is usually 8:00 AM PST / 4:00 PM UTC.",
+    },
+    {
+        question: "How do I get the Season Rewards?",
+        answer: "You must win 10 matches at a rank to secure that rank's rewards. For example, to get Diamond rewards, you need to reach Diamond rank AND win 10 games while at Diamond rank (after securing lower rank wins).",
+    },
+    {
+        question: "Will my rank reset next season?",
+        answer: "Yes, Rocket League uses a 'soft reset'. You will play placement matches and likely place slightly lower than where you finished, but you'll climb back up quickly.",
+    },
+    {
+        question: "What are the Season 21 rewards?",
+        answer: "Psyonix usually announces rewards a few weeks before the season ends. We will update this page as soon as they are revealed.",
+    },
+];
+---
+
+<section id="faq" class="py-6 w-full mb-12">
+    <div class="glass-panel p-8 md:p-12">
+        <h3
+            class="text-3xl md:text-4xl font-display font-bold text-white mb-8 text-center"
+        >
+            FREQUENTLY ASKED <span class="text-rocket-blue">QUESTIONS</span>
+        </h3>
+
+        <div class="space-y-4">
+            {
+                faqs.map((faq) => (
+                    <div class="bg-slate-900/40 border border-white/5 rounded-lg p-6 hover:bg-slate-900/60 transition-colors">
+                        <h4 class="text-white font-bold font-display text-lg mb-2">
+                            {faq.question}
+                        </h4>
+                        <p class="text-slate-400 leading-relaxed">
+                            {faq.answer}
+                        </p>
+                    </div>
+                ))
+            }
+        </div>
+    </div>
+</section>

@@ -1,0 +1,35 @@
+---
+interface Props {
+    className?: string;
+    size?: "banner" | "rectangle";
+    label?: string;
+}
+
+const {
+    className = "",
+    size = "banner",
+    label = "Advertisement",
+} = Astro.props;
+
+const heightClass = size === "banner" ? "h-24 md:h-32" : "h-64";
+---
+
+<div class={`w-full flex justify-center items-center my-8 ${className}`}>
+    <!-- 
+      AD CONTAINER 
+      When you are ready to add AdSense or other ads, replace the inner div below 
+      with your ad script.
+  -->
+    <div
+        class={`
+      ${heightClass} w-full max-w-[970px] 
+      bg-slate-900/30 border border-white/5 rounded-lg 
+      flex flex-col items-center justify-center 
+      text-slate-600 uppercase tracking-widest text-xs
+      hover:bg-slate-900/40 transition-colors cursor-default
+    `}
+    >
+        <span class="mb-1">{label}</span>
+        <span class="text-[10px] opacity-50">Space Available</span>
+    </div>
+</div>
