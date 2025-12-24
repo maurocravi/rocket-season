@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-rocket-bg: #0f172a;
+  --color-rocket-blue: #00eaff;
+  --color-rocket-orange: #ff8c00;
+  --font-display: "Orbitron", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-rocket-bg text-white font-body overflow-x-hidden antialiased;
+  }
+}
+
+@layer components {
+    .neon-text-blue {
+        text-shadow: 0 0 5px #00eaff, 0 0 10px #00eaff, 0 0 20px #00eaff;
+    }
+    .neon-text-orange {
+        text-shadow: 0 0 5px #ff8c00, 0 0 10px #ff8c00, 0 0 20px #ff8c00;
+    }
+    .glass-panel {
+        @apply bg-white/5 backdrop-blur-lg border border-white/10 rounded-xl;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+}

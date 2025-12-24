@@ -1,0 +1,93 @@
+---
+const targetDate = new Date("2026-03-11T00:00:00Z").getTime();
+---
+
+<div
+    id="countdown-container"
+    class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center mt-10"
+>
+    <div class="glass-panel p-6 flex flex-col items-center justify-center">
+        <span
+            id="days"
+            class="text-4xl md:text-6xl font-display font-bold text-white neon-text-blue"
+            >00</span
+        >
+        <span
+            class="text-sm md:text-base uppercase tracking-widest text-slate-400 mt-2"
+            >Days</span
+        >
+    </div>
+    <div class="glass-panel p-6 flex flex-col items-center justify-center">
+        <span
+            id="hours"
+            class="text-4xl md:text-6xl font-display font-bold text-white neon-text-blue"
+            >00</span
+        >
+        <span
+            class="text-sm md:text-base uppercase tracking-widest text-slate-400 mt-2"
+            >Hours</span
+        >
+    </div>
+    <div class="glass-panel p-6 flex flex-col items-center justify-center">
+        <span
+            id="minutes"
+            class="text-4xl md:text-6xl font-display font-bold text-white neon-text-blue"
+            >00</span
+        >
+        <span
+            class="text-sm md:text-base uppercase tracking-widest text-slate-400 mt-2"
+            >Minutes</span
+        >
+    </div>
+    <div class="glass-panel p-6 flex flex-col items-center justify-center">
+        <span
+            id="seconds"
+            class="text-4xl md:text-6xl font-display font-bold text-white neon-text-orange"
+            >00</span
+        >
+        <span
+            class="text-sm md:text-base uppercase tracking-widest text-slate-400 mt-2"
+            >Seconds</span
+        >
+    </div>
+</div>
+
+<script define:vars={{ targetDate }}>
+    function updateCountdown() {
+        const now = new Date().getTime();
+        const distance = targetDate - now;
+
+        if (distance < 0) {
+            document.getElementById("countdown-container").innerHTML =
+                '<div class="col-span-4 text-2xl text-white font-display">SEASON ENDED</div>';
+            return;
+        }
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+            (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
+        );
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("days").innerText = String(days).padStart(
+            2,
+            "0",
+        );
+        document.getElementById("hours").innerText = String(hours).padStart(
+            2,
+            "0",
+        );
+        document.getElementById("minutes").innerText = String(minutes).padStart(
+            2,
+            "0",
+        );
+        document.getElementById("seconds").innerText = String(seconds).padStart(
+            2,
+            "0",
+        );
+    }
+
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+</script>
