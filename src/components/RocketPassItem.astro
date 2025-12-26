@@ -1,0 +1,68 @@
+---
+interface Props {
+    tier: number;
+    name: string;
+    type: string;
+    rarity: string;
+    isFree?: boolean;
+    imageUrl?: string;
+}
+
+const { tier, name, type, rarity, isFree = false, imageUrl } = Astro.props;
+---
+
+<div
+    class="rocket-pass-card relative p-4 rounded-lg border border-slate-700 bg-slate-800 hover:border-blue-500 transition-colors group"
+>
+    <div
+        class="absolute top-2 right-2 text-xs font-bold px-2 py-1 rounded bg-slate-700 text-slate-300"
+    >
+        Tier {tier}
+    </div>
+    {
+        isFree && (
+            <div class="absolute top-2 left-2 text-xs font-bold px-2 py-1 rounded bg-green-600/20 text-green-400 border border-green-600/40">
+                FREE
+            </div>
+        )
+    }
+
+    <div
+        class="mt-6 mb-2 flex justify-center items-center h-24 bg-slate-900/50 rounded-md overflow-hidden relative"
+    >
+        {
+            imageUrl ? (
+                <>
+                    <img
+                        src={imageUrl}
+                        alt={name}
+                        class="h-full w-full object-contain z-10 relative bg-transparent"
+                        referrerpolicy="no-referrer"
+                        onerror="this.style.display='none'; this.parentNode.querySelector('.fallback-emoji').style.display='flex';"
+                    />
+                    <span
+                        class="fallback-emoji text-4xl opacity-50 absolute inset-0 flex justify-center items-center"
+                        style="display: none;"
+                    >
+                        🚀
+                    </span>
+                </>
+            ) : (
+                <span class="text-4xl opacity-50">🚀</span>
+            )
+        }
+    </div>
+
+    <div class="text-center">
+        <h3
+            class="text-lg font-bold text-white group-hover:text-blue-400 truncate"
+            title={name}
+        >
+            {name}
+        </h3>
+        <p class="text-xs text-slate-400 uppercase tracking-wider mt-1">
+            {type}
+        </p>
+        <p class="text-xs text-yellow-500 mt-1">{rarity}</p>
+    </div>
+</div>

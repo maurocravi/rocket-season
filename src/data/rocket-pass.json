@@ -1,0 +1,770 @@
+[
+  {
+    "tier": 1,
+    "name": "Corlay",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": "https://static.wikia.nocookie.net/rocketleague/images/1/13/CorlayIconRL.png/revision/latest?cb=20251210002804"
+  },
+  {
+    "tier": 2,
+    "name": "SearCellBoost",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 2,
+    "name": "Title: C'EST LA VIE",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": true,
+    "imageUrl": ""
+  },
+  {
+    "tier": 3,
+    "name": "Reebar Decal",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": "https://static.wikia.nocookie.net/rocketleague/images/3/32/ReebarDecal.png/revision/latest/scale-to-width-down/180?cb=20251212001637"
+  },
+  {
+    "tier": 4,
+    "name": "10% Party XP Boost",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 5,
+    "name": "LazergridWheel",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 5,
+    "name": "Uncommon_Drop",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": true,
+    "imageUrl": "data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D"
+  },
+  {
+    "tier": 6,
+    "name": "SciTekDecal",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 7,
+    "name": "LazergridInvertedWheel",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 8,
+    "name": "100 Credits",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": "https://static.wikia.nocookie.net/rocketleague/images/3/33/Credits_icon_%28transparent%29.png/revision/latest/scale-to-width-down/20?cb=20210209223435"
+  },
+  {
+    "tier": 8,
+    "name": "ChanoirDecalOctane",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": true,
+    "imageUrl": ""
+  },
+  {
+    "tier": 9,
+    "name": "Title: CAT BURGALAR",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 10,
+    "name": "RocketRoyaltyDecalOctane",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 10,
+    "name": "Uncommon_Drop",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": true,
+    "imageUrl": "data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D"
+  },
+  {
+    "tier": 11,
+    "name": "5% XP Boost",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 12,
+    "name": "TigerStrideWheel",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 13,
+    "name": "OilSlickTrail",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 13,
+    "name": "RLCSTrophy2025Topper",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": true,
+    "imageUrl": ""
+  },
+  {
+    "tier": 14,
+    "name": "RubberDuckyGoalExplosion",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 15,
+    "name": "100 Credits",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": "data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D"
+  },
+  {
+    "tier": 15,
+    "name": "Uncommon_Drop",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": true,
+    "imageUrl": "data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D"
+  },
+  {
+    "tier": 16,
+    "name": "LumièreDecalBreakout",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 17,
+    "name": "5% XP Boost",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 18,
+    "name": "PhotochromicDecal",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 18,
+    "name": "OrbitThroneRemixPlayerAnthem",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": true,
+    "imageUrl": ""
+  },
+  {
+    "tier": 19,
+    "name": "DiamondPaintFinish",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 20,
+    "name": "CatherdralWheel",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 20,
+    "name": "Uncommon_Drop",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": true,
+    "imageUrl": "data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D"
+  },
+  {
+    "tier": 21,
+    "name": "TigerStrideInvertedWheel",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 22,
+    "name": "100 Credits",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": "data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D"
+  },
+  {
+    "tier": 22,
+    "name": "SolidGoldAvatarBorder",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": true,
+    "imageUrl": ""
+  },
+  {
+    "tier": 23,
+    "name": "Quel Arr%C3%AAt Decal",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": "data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D"
+  },
+  {
+    "tier": 24,
+    "name": "Neon player anthem",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 25,
+    "name": "CyberTigerDecal",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 25,
+    "name": "Uncommon_Drop",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": true,
+    "imageUrl": "data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D"
+  },
+  {
+    "tier": 26,
+    "name": "5% XP Boost",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 27,
+    "name": "RollbackWheel",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 27,
+    "name": "MrBrainwashDreamChaserDecalBreakout",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": true,
+    "imageUrl": ""
+  },
+  {
+    "tier": 28,
+    "name": "StrikefireGoalExplosion",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 29,
+    "name": "100 Credits",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": "data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D"
+  },
+  {
+    "tier": 30,
+    "name": "CrimeSceneTrail",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 30,
+    "name": "Uncommon_Drop",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": true,
+    "imageUrl": "data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D"
+  },
+  {
+    "tier": 31,
+    "name": "CrowbarAntenna",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 32,
+    "name": "AcceleraceWheel",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 32,
+    "name": "HexagonalPaintFinish",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": true,
+    "imageUrl": ""
+  },
+  {
+    "tier": 33,
+    "name": "SafeHeistTopper",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 34,
+    "name": "ChampionsGoldBoost",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 35,
+    "name": "Magnifique",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": "data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D"
+  },
+  {
+    "tier": 35,
+    "name": "Uncommon_Drop",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": true,
+    "imageUrl": "data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D"
+  },
+  {
+    "tier": 36,
+    "name": "100 Credits",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": "data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D"
+  },
+  {
+    "tier": 37,
+    "name": "SecurityCamAntenna",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 37,
+    "name": "DeityWheel",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": true,
+    "imageUrl": ""
+  },
+  {
+    "tier": 38,
+    "name": "BankJobDecalMerc",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 39,
+    "name": "5% XP Boost",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 40,
+    "name": "Quel Arr%C3%AAt Decal",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": "data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D"
+  },
+  {
+    "tier": 40,
+    "name": "Uncommon_Drop",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": true,
+    "imageUrl": "data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D"
+  },
+  {
+    "tier": 41,
+    "name": "Title: RAT",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 42,
+    "name": "SafeCrackerGoalExplosion",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 43,
+    "name": "DPRamDecal",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 43,
+    "name": "GoalToGoldPlayerBanner",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": true,
+    "imageUrl": ""
+  },
+  {
+    "tier": 44,
+    "name": "TB3Topper",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 45,
+    "name": "InstantCrushPlayerAnthem",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 45,
+    "name": "Rare_Drop",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": true,
+    "imageUrl": "data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D"
+  },
+  {
+    "tier": 46,
+    "name": "DaftPunkPlayerBanner",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 47,
+    "name": "GM08Topper",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 48,
+    "name": "DPStrongerDecal",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 48,
+    "name": "ParlezVousPlayerAnthem",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": true,
+    "imageUrl": ""
+  },
+  {
+    "tier": 49,
+    "name": "GoalWildGoalExplosion",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 50,
+    "name": "100 Credits",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": "data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D"
+  },
+  {
+    "tier": 50,
+    "name": "Rare_Drop",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": true,
+    "imageUrl": "data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D"
+  },
+  {
+    "tier": 51,
+    "name": "5% XP Boost",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 52,
+    "name": "100 Credits",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": "data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D"
+  },
+  {
+    "tier": 53,
+    "name": "Reebar Decal",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": "data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D"
+  },
+  {
+    "tier": 53,
+    "name": "GildedSkullAntenna",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": true,
+    "imageUrl": ""
+  },
+  {
+    "tier": 54,
+    "name": "ÉtoileWheel",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 55,
+    "name": "Title: CRÈME DE LA CRÈME",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 55,
+    "name": "Rare_Drop",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": true,
+    "imageUrl": "data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D"
+  },
+  {
+    "tier": 56,
+    "name": "Magnifique GXT",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": "data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D"
+  },
+  {
+    "tier": 57,
+    "name": "100 Credits",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": "data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D"
+  },
+  {
+    "tier": 58,
+    "name": "5% Party XP Boost",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 58,
+    "name": "DeityRadiantWheel",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": true,
+    "imageUrl": ""
+  },
+  {
+    "tier": 59,
+    "name": "HeirloomDecalDominus",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 60,
+    "name": "HeartAttackWheel",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 60,
+    "name": "Rare_Drop",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": true,
+    "imageUrl": "data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D"
+  },
+  {
+    "tier": 61,
+    "name": "Reebar Decal",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": "data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D"
+  },
+  {
+    "tier": 62,
+    "name": "SteambeamDecal",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 63,
+    "name": "AcceleraceInvertedWheel",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 64,
+    "name": "100 Credits",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": "data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D"
+  },
+  {
+    "tier": 65,
+    "name": "RipRibbonBoost",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 65,
+    "name": "Very_Rare_Drop",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": true,
+    "imageUrl": "data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D"
+  },
+  {
+    "tier": 66,
+    "name": "5% XP Boost",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 67,
+    "name": "PsychomaticTrail",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 68,
+    "name": "Quel Arr%C3%AAt Decal",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": "data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D"
+  },
+  {
+    "tier": 69,
+    "name": "100 Credits",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": "data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D"
+  },
+  {
+    "tier": 70,
+    "name": "BigScoreGoalExplosion",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": false,
+    "imageUrl": ""
+  },
+  {
+    "tier": 70,
+    "name": "Very_Rare_Drop",
+    "type": "Unknown",
+    "rarity": "Limited",
+    "isFree": true,
+    "imageUrl": "data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D"
+  }
+]

@@ -1,0 +1,42 @@
+---
+import Layout from "../layouts/Layout.astro";
+import RocketPassItem from "../components/RocketPassItem.astro";
+import passData from "../data/rocket-pass.json";
+
+const title = "Rocket Pass - Season 21";
+---
+
+<Layout title={title}>
+    <main class="container mx-auto px-4 py-8">
+        <div class="text-center mb-12">
+            <h1
+                class="text-5xl font-black text-white mb-4 uppercase italic tracking-tighter"
+            >
+                Rocket<span class="text-blue-500">Pass</span>
+            </h1>
+            <p class="text-xl text-slate-300 max-w-2xl mx-auto">
+                Unlock premium rewards as you level up in Season 21. <br />
+                <span class="text-sm text-slate-500"
+                    >(Data is for demonstration purposes)</span
+                >
+            </p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
+            {
+                passData
+                    .sort((a, b) => a.tier - b.tier)
+                    .map((item) => (
+                        <RocketPassItem
+                            tier={item.tier}
+                            name={item.name}
+                            rarity={item.rarity}
+                            isFree={item.isFree}
+                        />
+                    ))
+            }
+        </div>
+    </main>
+</Layout>
+
+<!-- Data que no estoy usando: imageUrl={item.imageUrl}, type={item.type} -->
