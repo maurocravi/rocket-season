@@ -1,40 +1,116 @@
 ---
-const ranks = [
-    { name: "Bronze", percentage: 5, color: "bg-[#CD7F32]" },
-    { name: "Silver", percentage: 15, color: "bg-[#C0C0C0]" },
-    { name: "Gold", percentage: 25, color: "bg-[#FFD700]" },
-    { name: "Platinum", percentage: 30, color: "bg-[#4e9ec2]" },
-    { name: "Diamond", percentage: 15, color: "bg-[#3e55c9]" },
-    { name: "Champion", percentage: 8, color: "bg-[#9d3ec9]" },
-    { name: "Grand Champ", percentage: 1.5, color: "bg-[#c93e3e]" },
-    { name: "SSL", percentage: 0.5, color: "bg-white" },
-];
+const rankColors = {
+    Bronze: "bg-[#CD7F32]",
+    Silver: "bg-[#C0C0C0]",
+    Gold: "bg-[#FFD700]",
+    Platinum: "bg-[#4e9ec2]",
+    Diamond: "bg-[#3e55c9]",
+    Champion: "bg-[#9d3ec9]",
+    "Grand Champ": "bg-[#c93e3e]",
+    SSL: "bg-white",
+};
+
+const distributionData = {
+    "1v1": [
+        { name: "Bronze", percentage: 1.69, color: rankColors.Bronze },
+        { name: "Silver", percentage: 14.56, color: rankColors.Silver },
+        { name: "Gold", percentage: 42.45, color: rankColors.Gold },
+        { name: "Platinum", percentage: 34.75, color: rankColors.Platinum },
+        { name: "Diamond", percentage: 5.8, color: rankColors.Diamond },
+        { name: "Champion", percentage: 0.67, color: rankColors.Champion },
+        {
+            name: "Grand Champ",
+            percentage: 0.08,
+            color: rankColors["Grand Champ"],
+        },
+        { name: "SSL", percentage: 0.01, color: rankColors.SSL },
+    ],
+    "2v2": [
+        { name: "Bronze", percentage: 2.97, color: rankColors.Bronze },
+        { name: "Silver", percentage: 14.18, color: rankColors.Silver },
+        { name: "Gold", percentage: 28.55, color: rankColors.Gold },
+        { name: "Platinum", percentage: 26.18, color: rankColors.Platinum },
+        { name: "Diamond", percentage: 18.49, color: rankColors.Diamond },
+        { name: "Champion", percentage: 8.36, color: rankColors.Champion },
+        {
+            name: "Grand Champ",
+            percentage: 1.23,
+            color: rankColors["Grand Champ"],
+        },
+        { name: "SSL", percentage: 0.04, color: rankColors.SSL },
+    ],
+    "3v3": [
+        { name: "Bronze", percentage: 1.29, color: rankColors.Bronze },
+        { name: "Silver", percentage: 14.43, color: rankColors.Silver },
+        { name: "Gold", percentage: 39.06, color: rankColors.Gold },
+        { name: "Platinum", percentage: 27.15, color: rankColors.Platinum },
+        { name: "Diamond", percentage: 13.95, color: rankColors.Diamond },
+        { name: "Champion", percentage: 3.84, color: rankColors.Champion },
+        {
+            name: "Grand Champ",
+            percentage: 0.28,
+            color: rankColors["Grand Champ"],
+        },
+        { name: "SSL", percentage: 0.01, color: rankColors.SSL },
+    ],
+};
 ---
 
 <section id="rank-distribution" class="py-6 w-full">
     <div class="glass-panel p-8 md:p-12">
-        <h3
-            class="text-3xl md:text-4xl font-display font-bold text-white mb-2 text-left border-l-4 border-rocket-orange pl-4"
+        <div
+            class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8"
         >
-            RANK <span class="text-rocket-orange">DISTRIBUTION</span>
-        </h3>
-        <p class="text-slate-400 mb-8 text-left pl-5">
-            Estimated player distribution 2v2 Standard
-        </p>
+            <div>
+                <h3
+                    class="text-3xl md:text-4xl font-display font-bold text-white mb-2 text-left border-l-4 border-rocket-orange pl-4"
+                >
+                    RANK <span class="text-rocket-orange">DISTRIBUTION</span>
+                </h3>
+                <p class="text-slate-400 text-left pl-5">
+                    Estimated player distribution (Season 20)
+                </p>
+            </div>
 
-        <div class="space-y-4">
+            <div class="flex gap-2 mt-4 md:mt-0 pl-5 md:pl-0">
+                <button
+                    class="tab-btn px-4 py-1.5 rounded-full text-sm font-bold transition-all bg-slate-800 text-slate-400 hover:text-white cursor-pointer"
+                    data-mode="1v1"
+                >
+                    1v1
+                </button>
+                <button
+                    class="tab-btn px-4 py-1.5 rounded-full text-sm font-bold transition-all bg-rocket-orange text-white hover:text-white cursor-pointer"
+                    data-mode="2v2"
+                >
+                    2v2
+                </button>
+                
+                <button
+                    class="tab-btn px-4 py-1.5 rounded-full text-sm font-bold transition-all bg-slate-800 text-slate-400 hover:text-white cursor-pointer"
+                    data-mode="3v3"
+                >
+                    3v3
+                </button>
+
+            </div>
+        </div>
+
+        <div class="space-y-4" id="distribution-bars">
             {
-                ranks.map((rank) => (
-                    <div class="relative">
+                distributionData["2v2"].map((rank) => (
+                    <div class="relative rank-row" data-rank={rank.name}>
                         <div class="flex justify-between text-sm text-slate-300 mb-1">
                             <span class="font-bold">{rank.name}</span>
-                            <span>{rank.percentage}%</span>
+                            <span class="percentage-text">
+                                {rank.percentage}%
+                            </span>
                         </div>
                         <div class="w-full bg-slate-900/50 rounded-full h-4 overflow-hidden border border-white/5">
                             <div
-                                class={`h-full rounded-full ${rank.color} shadow-[0_0_10px_rgba(255,255,255,0.3)]`}
+                                class={`bar-fill h-full rounded-full ${rank.color} shadow-[0_0_10px_rgba(255,255,255,0.3)] transition-all duration-700 ease-out`}
                                 style={`width: ${rank.percentage}%`}
-                            ></div>
+                            />
                         </div>
                     </div>
                 ))
@@ -42,3 +118,43 @@ const ranks = [
         </div>
     </div>
 </section>
+
+<script define:vars={{ distributionData }}>
+    const buttons = document.querySelectorAll(".tab-btn");
+    const rows = document.querySelectorAll(".rank-row");
+
+    // Function to update the view
+    function updateDistribution(mode) {
+        // Update buttons
+        buttons.forEach((btn) => {
+            if (btn.dataset.mode === mode) {
+                btn.classList.remove("bg-slate-800", "text-slate-400");
+                btn.classList.add("bg-rocket-orange", "text-white");
+            } else {
+                btn.classList.add("bg-slate-800", "text-slate-400");
+                btn.classList.remove("bg-rocket-orange", "text-white");
+            }
+        });
+
+        // Update bars with new data
+        const newData = distributionData[mode];
+
+        rows.forEach((row, index) => {
+            const dataItem = newData[index];
+            if (dataItem) {
+                const percentageText = row.querySelector(".percentage-text");
+                const barFill = row.querySelector(".bar-fill");
+
+                percentageText.textContent = `${dataItem.percentage}%`;
+                barFill.style.width = `${dataItem.percentage}%`;
+            }
+        });
+    }
+
+    // Add click event listeners
+    buttons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+            updateDistribution(btn.dataset.mode);
+        });
+    });
+</script>
